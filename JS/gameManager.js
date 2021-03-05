@@ -20,7 +20,7 @@ let GameManager = {
                 break;
         }
         let getInterface = document.querySelector(".interface");
-        getInterface.innerHTML = '<img src="img/avatar-player/'+ classType +'.png" class="img-avatar"><div><h3>' + classType + '</h3><p class = "player-health">Health:' + player.health + '</p><p>mana:' + player.mana + '</p><p>strength:' + player.strength + '</p><p>agility:' + player.agility + '</p><p>speed:' + player.speed + '</p></div>';
+        getInterface.innerHTML = '<img src="img/avatar-player/'+ classType +'.png" class="img-avatar"><div><h3>' + classType + '</h3><p class = "health-player">Health:' + player.health + '</p><p>mana:' + player.mana + '</p><p>strength:' + player.strength + '</p><p>agility:' + player.agility + '</p><p>speed:' + player.speed + '</p></div>';
 
     },
     setPreFight: function () {
@@ -36,8 +36,8 @@ let GameManager = {
         let getActions = document.querySelector(".actions");
         let getEnemy = document.querySelector(".enemy");
         //CREATE ENEMY!
-        let enemy00 = new Enemy("goblin", 100, 0, 50, 100, 100);
-        let enemy01 = new Enemy("troll", 200, 90, 150, 80, 150);
+        let enemy00 = new Enemy("goblin", 600, 0, 50, 100, 100);
+        let enemy01 = new Enemy("troll", 700, 90, 150, 80, 150);
         let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(2));
         switch (chooseRandomEnemy) {
             case 0:
