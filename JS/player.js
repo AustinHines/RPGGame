@@ -56,10 +56,10 @@ let PlayerMoves = {
             alert("You hit " +   playerAttackValues  [0]  +  " damage " +  playerAttackValues [1] +  " Times ");
             if (enemy.health <= 0) {
                 alert("You Win!!! refresh the browser to play again");
-                getPlayerHealth.innerHTML = 'Health: ' + player.health;
+                getPlayerHealth.innerHTML = 'Health:' + player.health;
                 getEnemyHealth.innerHTML = 'Health: 0';
             } else {
-                getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+                getEnemyHealth.innerHTML = 'Health:' + enemy.health;
                 //Enemy attacks
                 let enemyAttackValues = enemyAttack();
                 let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
@@ -68,9 +68,9 @@ let PlayerMoves = {
                 if (enemy.health <= 0) {
                     alert("You Lose!!! refresh the browser to play again");
                     getPlayerHealth.innerHTML = 'Health: 0';
-                    getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+                    getEnemyHealth.innerHTML = 'Health:' + enemy.health;
                 } else {
-                    getEnemyHealth.innerHTML = 'Health: ' + player.health;
+                    getEnemyHealth.innerHTML = 'Health:' + enemy.health;
                 }
 
             }
