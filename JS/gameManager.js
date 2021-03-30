@@ -9,7 +9,7 @@ let GameManager = {
             case "Warrior":
                 player = new Player(classType, 300, 0, 300, 100, 100);
                 break;
-            case "Rouge":
+            case "Rogue":
                 player = new Player(classType, 100, 0, 200, 200, 300);
                 break;
             case "Hunter":
