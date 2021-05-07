@@ -16,7 +16,7 @@ let GameManager = {
                 player = new Player(classType, 100, 0, 100, 300, 300);
                 break;
             case "Mage":
-                player = new Player(classType, 200, 300, 100, 100, 100);
+                player = new Player(classType, 200, 300, 100, 200, 100);
                 break;
         }
         let getInterface = document.querySelector(".interface");
